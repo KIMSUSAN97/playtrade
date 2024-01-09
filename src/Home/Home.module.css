@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+}
+
+.wall {
+  width: 100%; /* 혹은 필요한 크기로 지정 */
+  height: auto;
+  display: block;
+}
+
+.overlayText {
+  position: absolute;
+  top: 50%; /* 원하는 위치로 조절하세요 */
+  left: 50%; /* 원하는 위치로 조절하세요 */
+  transform: translate(-50%, -50%);
+  color: white; /* 텍스트 색상을 원하는 대로 지정하세요 */
+  text-align: center;
+}
