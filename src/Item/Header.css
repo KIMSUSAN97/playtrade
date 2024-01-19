@@ -60,3 +60,15 @@
   transform: translateY(0px);
   text-decoration: underline; /* 밑줄이 사라지지 않도록 복원 */
 }
+
+/* header.css */
+.menu-item a:visited,
+.menu-item a:focus {
+  color: inherit; /* 링크 색상을 상위 요소에서 상속받음 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.menu-item a:hover {
+  color: purple; /* 호버 시 색상 변경 */
+  text-decoration: underline; /* 밑줄 추가 */
+}
