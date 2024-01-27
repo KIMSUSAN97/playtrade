@@ -1,18 +1,37 @@
 .container {
   position: relative;
+  text-align: center;
 }
 
 .wall {
-  width: 100%; /* 혹은 필요한 크기로 지정 */
-  height: auto;
+  width: 100%;
+  margin-top: 30px;
+  height: 800px;
   display: block;
 }
 
-.overlayText {
+.overlay-text {
   position: absolute;
-  top: 50%; /* 원하는 위치로 조절하세요 */
-  left: 50%; /* 원하는 위치로 조절하세요 */
+  top: 50%;
+  left: 20%;
   transform: translate(-50%, -50%);
-  color: white; /* 텍스트 색상을 원하는 대로 지정하세요 */
-  text-align: center;
+  color: white;
+  font-size: 120px;
+  text-align: left;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fff;
 }
