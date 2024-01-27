@@ -17,7 +17,6 @@ const BuySubmit = () => {
     <div>
       <BuyPost onAddPost={handleAddPost} />
       <div>
-        <h2>최신 게시글</h2>
         <ul>
           {posts.map((post) => (
             <li key={post.id}>{post.title}</li>

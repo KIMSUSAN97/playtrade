@@ -13,13 +13,14 @@
   width: 400px;
   height: 40px;
   border: solid 1px gray;
-  margin: 10px; /* 각 input 요소 간격 조절 */
+  border-radius: 5px;
+  margin: 20px; /* 각 input 요소 간격 조절 */
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .button {
-  width: 300px;
+  width: 150px;
   margin: 10px;
   padding: 10px;
   border-radius: 5px;

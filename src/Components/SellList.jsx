@@ -1,14 +1,24 @@
+import { Link } from "react-router-dom";
+
 const SellList = ({ posts }) => {
-  const limitedPosts = posts ? posts.slice(0, 3) : [];
+  const limitedPosts = posts ? posts.slice(0, 6) : [];
 
   return (
-    <div>
+    <div /*className={styles.buyListContainer}*/>
       <h2>최신 게시글</h2>
-      <ul>
+      <div /*className={styles.cardContainer}*/>
         {limitedPosts.map((post) => (
-          <li key={post.id}>{post.title}</li>
+          <div key={post.id} /*className={styles.card}*/>
+            {/* 게시글 이미지를 표시하는 코드 추가 */}
+            <img src={post.image} alt={`게시글 이미지 - ${post.title}`} />
+            {/* 게시글 제목을 표시하는 코드 추가 */}
+            <h3>{post.title}</h3>
+          </div>
         ))}
-      </ul>
+      </div>
+      <button>
+        <Link to="/buysubmit">게시글 등록</Link>
+      </button>
     </div>
   );
 };
